@@ -1,0 +1,21 @@
+Dear Shop-Owner,
+
+below is the current stock report and estimates on when the products
+will run low.
+
+Estimates:
+<% @forecast.each do |dict| %>
+<%= dict['name'] %> => <%= dict['weighted_mean'].round(2) %> days until sold out.
+<% end %>
+
+
+Empty Products:
+<% @empty_products.each do |product| %>
+<%= product.name %>
+<% end %>
+
+
+Empty Variants:
+<% @empty_variants.each do |variant| %>
+<%= variant.name %>
+<% end %>

@@ -1,8 +1,8 @@
-module SpreeSysmocomStock
+module SysmocomStock
   class Engine < Rails::Engine
     require 'spree/core'
     isolate_namespace Spree
-    engine_name 'spree_sysmocom_stock'
+    engine_name 'sysmocom_stock'
 
     config.autoload_paths += %W(#{config.root}/lib)
 

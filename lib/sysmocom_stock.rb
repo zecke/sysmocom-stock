@@ -1,2 +1,3 @@
 require 'spree_core'
-require 'spree_sysmocom_stock/engine'
+require 'sysmocom_stock/engine'
+
