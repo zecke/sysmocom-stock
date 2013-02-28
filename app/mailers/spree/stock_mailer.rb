@@ -42,8 +42,10 @@ module Spree
         else
             name = "Sku " + var.sku
         end
+	days = var.count_on_hand / mean
 
-        {'weighted_mean' => mean, 'variant' => var, 'product' => var.product, 'name' => name}
+        {'weighted_mean' => mean, 'days' => days, 'variant' => var,
+            'product' => var.product, 'name' => name}
     end
 
     def generate_forecast()

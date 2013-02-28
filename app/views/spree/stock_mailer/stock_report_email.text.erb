@@ -5,7 +5,7 @@ will run low.
 
 Estimates:
 <% @forecast.each do |dict| %>
-<%= dict['name'] %> => <%= dict['weighted_mean'].round(2) %> days until sold out.
+<%= dict['name'] %> => <%= dict['days'].round(2) %> days until sold out.
 <% end %>
 
 
