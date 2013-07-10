@@ -45,7 +45,7 @@ module Spree
 	days = var.count_on_hand / mean
 
         {'weighted_mean' => mean, 'days' => days, 'variant' => var,
-            'product' => var.product, 'name' => name}
+            'product' => var.product, 'name' => name, 'available' => var.count_on_hand}
     end
 
     def generate_forecast()
