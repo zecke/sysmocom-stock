@@ -62,7 +62,7 @@ module Spree
             forecast.push(generate_estimate(var))
         }
 
-        forecast
+        forecast.sort { |x,y| x['days'] <=> y['days'] }
     end
 
     def stock_report_email()
